@@ -1,6 +1,8 @@
 {
-  "name": "portfolio-temp",
-  "version": "0.1.0",
+  "name": "jonathan-ripas-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Jonathan B. Ripas.",
+  "author": "Jonathan B. Ripas",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -20,6 +22,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "postcss": "^8",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
