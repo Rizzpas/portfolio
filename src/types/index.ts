@@ -20,6 +20,8 @@ export interface Experience {
   period: string;
   description: string;
   skills: string[];
+  type?: string;
+  highlights?: string[];
 }
 
 export interface Education {
@@ -27,6 +29,8 @@ export interface Education {
   institution: string;
   period: string;
   description: string;
+  highlights?: string[];
+  gpa?: string;
 }
 
 export interface Project {
@@ -36,10 +40,15 @@ export interface Project {
   link: string;
   github?: string;
   imageUrl?: string;
+  status?: string;
+  highlights?: string[];
 }
 
 export interface Certification {
   title: string;
   issuer: string;
   date: string;
+  credentialId?: string;
+  credentialUrl?: string;
+  description?: string;
 }
