@@ -35,11 +35,10 @@ export function RightPanel() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className={`block text-[13px] transition-colors duration-150 ${
-                        isActive
-                          ? "font-medium text-foreground"
-                          : "text-muted-foreground hover:text-foreground"
-                      }`}
+                      className={`block text-[13px] transition-colors duration-150 ${isActive
+                        ? "font-medium text-foreground"
+                        : "text-muted-foreground hover:text-foreground"
+                        }`}
                     >
                       {link.name}
                     </Link>
@@ -70,7 +69,7 @@ export function RightPanel() {
                   <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                Philippines
+                Dasmariñas, Cavite
               </div>
             </div>
           </div>
@@ -79,7 +78,7 @@ export function RightPanel() {
         {/* Footer */}
         <div className="border-t border-border/60 px-5 py-4">
           <p className="text-[11px] text-muted-foreground/50">
-            Built with Next.js & Tailwind
+            @ 2026 Ripas, J
           </p>
         </div>
       </div>

@@ -13,15 +13,15 @@ export default function Home() {
       <div className="mb-16 animate-fade-up">
         <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 sm:p-10 card-glow">
           {/* Subtle background glow */}
-          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-violet-500/10 blur-3xl pointer-events-none" />
-          
+          <div className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-gray-500/10 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-gray-500/10 blur-3xl pointer-events-none" />
+
           <div className="relative flex flex-col items-center text-center gap-6 sm:flex-row sm:items-start sm:text-left sm:gap-10">
             {/* Profile Picture */}
             <div className="flex-shrink-0">
-              <div className="profile-ring h-32 w-32 overflow-hidden rounded-full bg-muted sm:h-40 sm:w-40 transition-transform duration-500 hover:scale-105">
+              <div className="profile-ring h-32 w-32 overflow-hidden rounded-xl bg-muted sm:h-40 sm:w-40 transition-transform duration-500 hover:scale-105">
                 <Image
-                  src="/profile.jpg"
+                  src="/idpic.png"
                   alt={about.name}
                   width={160}
                   height={160}
@@ -33,27 +33,27 @@ export default function Home() {
 
             {/* Name + Info + Buttons */}
             <div className="flex flex-col items-center sm:items-start flex-1 pt-2">
-              <div className="inline-flex items-center rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-1 mb-4 text-xs font-medium text-blue-600 dark:text-blue-400">
-                <span className="mr-1.5 flex h-2 w-2 rounded-full bg-blue-500 animate-pulse"></span>
+              <div className="inline-flex items-center rounded-full border border-zinc-500/20 bg-zinc-500/10 px-3 py-1 mb-4 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                <span className="mr-1.5 flex h-2 w-2 rounded-full bg-zinc-500 animate-pulse"></span>
                 Available for new opportunities
               </div>
-              
+
               <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl md:text-5xl mb-2">
                 {about.name}
               </h1>
-              
+
               <p className="text-lg font-medium text-muted-foreground/80 mb-4 max-w-lg">
                 {about.tagline}
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-sm text-muted-foreground mb-8">
                 <span className="flex items-center gap-1.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                   {about.location}
                 </span>
                 <span className="hidden sm:inline text-border">•</span>
                 <span className="flex items-center gap-1.5">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
                   {about.email}
                 </span>
               </div>
@@ -85,7 +85,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           {/* Quick Metrics */}
           <div className="relative mt-10 grid grid-cols-2 md:grid-cols-3 gap-4 border-t border-border/50 pt-8">
             {about.metrics.map((metric, i) => (
@@ -104,8 +104,8 @@ export default function Home() {
           {/* About */}
           <div className="rounded-2xl border border-border bg-card p-6 card-glow flex flex-col">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h4l3-9 5 18 3-9h5"/></svg>
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-500/10 text-zinc-600 dark:text-zinc-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h4l3-9 5 18 3-9h5" /></svg>
               </div>
               <h2 className="text-lg font-bold text-foreground">About Me</h2>
             </div>
@@ -117,8 +117,8 @@ export default function Home() {
           {/* Core Skills */}
           <div className="rounded-2xl border border-border bg-card p-6 card-glow flex flex-col">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-500/10 text-zinc-600 dark:text-zinc-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
               </div>
               <h2 className="text-lg font-bold text-foreground">Core Expertise</h2>
             </div>
@@ -135,32 +135,32 @@ export default function Home() {
 
       {/* Featured Overview Sections */}
       <div className="space-y-16 relative">
-        <div className="absolute left-6 top-8 bottom-8 w-px bg-gradient-to-b from-blue-500/20 via-violet-500/20 to-transparent hidden sm:block" />
+        <div className="absolute left-6 top-8 bottom-8 w-px bg-gradient-to-b from-zinc-500/20 via-zinc-500/20 to-transparent hidden sm:block" />
 
         <div className="animate-fade-up-delay-2 relative sm:pl-16">
-          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-blue-500 hidden sm:block" />
+          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-zinc-500 hidden sm:block" />
           <ExperienceSection />
         </div>
-        
+
         <div className="animate-fade-up-delay-3 relative sm:pl-16">
-          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-emerald-500 hidden sm:block" />
+          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-zinc-500 hidden sm:block" />
           <EducationSection />
         </div>
-        
+
         <div className="animate-fade-up-delay-4 relative sm:pl-16">
-          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-violet-500 hidden sm:block" />
+          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-zinc-500 hidden sm:block" />
           <ProjectsSection />
         </div>
-        
+
         <div className="animate-fade-up-delay-4 relative sm:pl-16">
-          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-amber-500 hidden sm:block" />
+          <div className="absolute left-4 top-1 h-4 w-4 rounded-full border-4 border-background bg-zinc-500 hidden sm:block" />
           <CertificationsSection />
         </div>
       </div>
 
       {/* Let's Connect */}
-      <div className="mt-24 mb-8 animate-fade-up relative overflow-hidden rounded-3xl border border-blue-500/20 bg-blue-500/5 p-10 text-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-violet-500/5" />
+      <div className="mt-24 mb-8 animate-fade-up relative overflow-hidden rounded-3xl border border-zinc-500/20 bg-zinc-500/5 p-10 text-center">
+        <div className="absolute inset-0 bg-gradient-to-br from-zinc-500/5 to-zinc-500/5" />
         <div className="relative z-10 flex flex-col items-center">
           <h2 className="text-2xl font-bold text-foreground sm:text-3xl mb-4">Let&apos;s build something great.</h2>
           <p className="text-muted-foreground max-w-md mx-auto mb-8 text-sm">
@@ -168,10 +168,10 @@ export default function Home() {
           </p>
           <a
             href="mailto:jonathan.ripas@gmail.com"
-            className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-blue-700 hover:-translate-y-1 shadow-lg shadow-blue-500/25 active:scale-95"
+            className="inline-flex items-center gap-2 rounded-xl bg-zinc-600 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-zinc-700 hover:-translate-y-1 shadow-lg shadow-zinc-500/25 active:scale-95"
           >
             Say Hello
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
           </a>
         </div>
       </div>

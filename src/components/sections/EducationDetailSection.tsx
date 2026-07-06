@@ -34,7 +34,7 @@ export function EducationDetailSection() {
                     {edu.gpa && (
                       <>
                         <span className="text-border">·</span>
-                        <span className="inline-flex items-center rounded-md bg-emerald-500/10 px-2 py-0.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+                        <span className="inline-flex items-center rounded-md bg-zinc-500/10 px-2 py-0.5 text-[11px] font-semibold text-zinc-600 dark:text-zinc-400">
                           GPA: {edu.gpa}
                         </span>
                       </>

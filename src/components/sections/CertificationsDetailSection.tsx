@@ -10,7 +10,7 @@ export function CertificationsDetailSection() {
         >
           <div className="flex items-start gap-5">
             {/* Badge icon */}
-            <div className="cert-badge-icon mt-0.5 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/10 to-violet-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/10">
+            <div className="cert-badge-icon mt-0.5 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-zinc-500/10 to-zinc-500/10 text-zinc-600 dark:text-zinc-400 border border-zinc-500/10">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
                 <path d="m9 12 2 2 4-4" />
@@ -67,7 +67,7 @@ export function CertificationsDetailSection() {
                     href={cert.credentialUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-lg border border-blue-500/20 bg-blue-500/5 px-3 py-1.5 text-[12px] font-medium text-blue-600 transition-colors hover:bg-blue-500/10 dark:text-blue-400"
+                    className="inline-flex items-center gap-1.5 rounded-lg border border-zinc-500/20 bg-zinc-500/5 px-3 py-1.5 text-[12px] font-medium text-zinc-600 transition-colors hover:bg-zinc-500/10 dark:text-zinc-400"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />

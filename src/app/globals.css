@@ -156,20 +156,20 @@ body {
 
 /* Active / current role dot pulse */
 .timeline-dot-active {
-  background: #3b82f6;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  background: var(--foreground);
+  border-color: var(--foreground);
+  box-shadow: 0 0 0 4px rgba(161, 161, 170, 0.15);
 }
 
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 0 4px rgba(161, 161, 170, 0.2);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(59, 130, 246, 0.05);
+    box-shadow: 0 0 0 8px rgba(161, 161, 170, 0.05);
   }
   100% {
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 0 4px rgba(161, 161, 170, 0.2);
   }
 }
 
@@ -219,27 +219,27 @@ body {
 
 /* Status badge colors */
 .status-live {
-  background: rgba(34, 197, 94, 0.1);
-  color: #16a34a;
-  border: 1px solid rgba(34, 197, 94, 0.2);
+  background: rgba(161, 161, 170, 0.1);
+  color: #52525b;
+  border: 1px solid rgba(161, 161, 170, 0.2);
 }
 
 .dark .status-live {
-  background: rgba(34, 197, 94, 0.1);
-  color: #4ade80;
-  border-color: rgba(34, 197, 94, 0.2);
+  background: rgba(161, 161, 170, 0.1);
+  color: #a1a1aa;
+  border-color: rgba(161, 161, 170, 0.2);
 }
 
 .status-in-development {
-  background: rgba(251, 191, 36, 0.1);
-  color: #d97706;
-  border: 1px solid rgba(251, 191, 36, 0.2);
+  background: rgba(161, 161, 170, 0.1);
+  color: #52525b;
+  border: 1px solid rgba(161, 161, 170, 0.2);
 }
 
 .dark .status-in-development {
-  background: rgba(251, 191, 36, 0.1);
-  color: #fbbf24;
-  border-color: rgba(251, 191, 36, 0.2);
+  background: rgba(161, 161, 170, 0.1);
+  color: #a1a1aa;
+  border-color: rgba(161, 161, 170, 0.2);
 }
 
 .status-archived {
@@ -256,13 +256,13 @@ body {
 
 /* Page header gradient accent */
 .page-header-accent {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(139, 92, 246, 0.08));
-  border: 1px solid rgba(59, 130, 246, 0.1);
+  background: linear-gradient(135deg, rgba(161, 161, 170, 0.08), rgba(82, 82, 91, 0.08));
+  border: 1px solid rgba(161, 161, 170, 0.1);
 }
 
 .dark .page-header-accent {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.06), rgba(139, 92, 246, 0.06));
-  border-color: rgba(59, 130, 246, 0.08);
+  background: linear-gradient(135deg, rgba(161, 161, 170, 0.06), rgba(82, 82, 91, 0.06));
+  border-color: rgba(161, 161, 170, 0.08);
 }
 
 /* Stat pill */
@@ -287,7 +287,7 @@ body {
 }
 
 .dark .group:hover .cert-badge-icon {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 0 20px rgba(161, 161, 170, 0.15);
 }
 
 /* Highlight list checkmark bullet */
@@ -304,7 +304,7 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #3b82f6;
+  background: var(--foreground);
   opacity: 0.6;
 }
 

@@ -29,8 +29,8 @@ export function ExperienceDetailSection() {
                         {job.role}
                       </h3>
                       {isCurrent && (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-blue-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-blue-600 dark:text-blue-400">
-                          <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
+                        <span className="inline-flex items-center gap-1 rounded-full bg-zinc-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-zinc-600 dark:text-zinc-400">
+                          <span className="h-1.5 w-1.5 rounded-full bg-zinc-500 animate-pulse" />
                           Current
                         </span>
                       )}
