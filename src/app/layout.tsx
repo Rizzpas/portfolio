@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ripas, J — Portfolio",
-  description: "Personal portfolio of Jonathan B. Ripas — AI Engineer",
+  description: "Personal portfolio of Jonathan B. Ripas — Aspiring Frontend Developer & UI/UX Designer",
 };
 
 export default function RootLayout({

@@ -2,29 +2,27 @@ import { Education } from "@/types";
 
 export const education: Education[] = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University of Technology",
-    period: "2017 — 2021",
-    description: "Graduated with honors. Focused on software engineering, data structures, and web technologies. Active member of the university coding club.",
-    gpa: "3.8 / 4.0",
+    degree: "Bachelor of Science in Information Systems (BSIS)",
+    institution: "Kolehiyo ng Lungsod ng Dasmariñas (KLD)",
+    period: "2023 — Present",
+    description:
+      "Currently a 4th-year student (1st Semester). Throughout my academic journey, I discovered a genuine passion for Frontend Development and UI/UX Design. The IS program's focus on Data Analytics has also pushed me to continuously expand my technical knowledge across different domains.",
     highlights: [
-      "Dean's List for 6 consecutive semesters with a cumulative GPA of 3.8",
-      "Thesis: \"Intelligent Document Classification Using Transformer-Based Architectures\"",
-      "Core coursework: Data Structures, Algorithms, Machine Learning, Database Systems, Software Engineering",
-      "Vice President of the university Computer Science Society — organized hackathons and tech talks",
-      "Won 1st place at the university-wide hackathon for an AI-powered campus navigation app",
+      "UI/UX Design is one of my favorite subjects — combining creativity with problem-solving to create better user experiences",
+      "Developing a Web-Based Management Information System for the Rural Health Unit of Silang, Cavite as my Capstone project",
+      "Continuously improving skills in Data Analytics as part of the IS program focus",
+      "Commissioned to build a live website for an engineering company based in New Zealand",
     ],
   },
   {
-    degree: "Full Stack Web Development Bootcamp",
-    institution: "Code Academy Online",
-    period: "2020",
-    description: "Intensive 12-week program covering modern web development with JavaScript, React, and Node.js.",
+    degree: "Accountancy, Business, and Management (ABM) Strand",
+    institution: "Technological Innovative School of Excellence",
+    period: "2021 — 2023",
+    description:
+      "Completed the ABM strand in Senior High School, building a foundation in business and management principles that complements my current studies in Information Systems.",
     highlights: [
-      "Completed 12 capstone projects spanning frontend, backend, and full-stack development",
-      "Built a real-time collaborative task management app as the final capstone project",
-      "Learned modern tooling: Git, Docker, CI/CD pipelines, and cloud deployment (AWS, Vercel)",
-      "Earned top 5% distinction among 200+ program participants",
+      "Gained foundational knowledge in accounting, business operations, and management",
+      "Developed analytical and critical thinking skills applicable to information systems",
     ],
   },
 ];

@@ -35,7 +35,7 @@ export default function Home() {
             <div className="flex flex-col items-center sm:items-start flex-1 pt-2">
               <div className="inline-flex items-center rounded-full border border-zinc-500/20 bg-zinc-500/10 px-3 py-1 mb-4 text-xs font-medium text-zinc-600 dark:text-zinc-400">
                 <span className="mr-1.5 flex h-2 w-2 rounded-full bg-zinc-500 animate-pulse"></span>
-                Available for new opportunities
+                Open to OJT &amp; Internship Opportunities
               </div>
 
               <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl md:text-5xl mb-2">
@@ -86,12 +86,22 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Quick Metrics */}
-          <div className="relative mt-10 grid grid-cols-2 md:grid-cols-3 gap-4 border-t border-border/50 pt-8">
-            {about.metrics.map((metric, i) => (
-              <div key={i} className="flex flex-col items-center sm:items-start text-center sm:text-left">
-                <span className="text-2xl sm:text-3xl font-extrabold text-foreground">{metric.value}</span>
-                <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-muted-foreground mt-1">{metric.label}</span>
+          {/* Focus Areas / Interests */}
+          <div className="relative mt-10 grid grid-cols-3 gap-4 border-t border-border/50 pt-8">
+            {about.interests.map((interest, i) => (
+              <div key={i} className="flex flex-col items-center sm:items-start text-center sm:text-left gap-2">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-foreground">
+                  {interest.icon === "code" && (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+                  )}
+                  {interest.icon === "palette" && (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor" /><circle cx="17.5" cy="10.5" r=".5" fill="currentColor" /><circle cx="8.5" cy="7.5" r=".5" fill="currentColor" /><circle cx="6.5" cy="12.5" r=".5" fill="currentColor" /><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" /></svg>
+                  )}
+                  {interest.icon === "cpu" && (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" /><path d="M15 2v2" /><path d="M15 20v2" /><path d="M2 15h2" /><path d="M2 9h2" /><path d="M20 15h2" /><path d="M20 9h2" /><path d="M9 2v2" /><path d="M9 20v2" /></svg>
+                  )}
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-foreground">{interest.label}</span>
               </div>
             ))}
           </div>
@@ -105,7 +115,7 @@ export default function Home() {
           <div className="rounded-2xl border border-border bg-card p-6 card-glow flex flex-col">
             <div className="flex items-center gap-3 mb-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-500/10 text-zinc-600 dark:text-zinc-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h4l3-9 5 18 3-9h5" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
               </div>
               <h2 className="text-lg font-bold text-foreground">About Me</h2>
             </div>
@@ -120,7 +130,7 @@ export default function Home() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-500/10 text-zinc-600 dark:text-zinc-400">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
               </div>
-              <h2 className="text-lg font-bold text-foreground">Core Expertise</h2>
+              <h2 className="text-lg font-bold text-foreground">Tech Stack</h2>
             </div>
             <div className="flex flex-wrap gap-2 mt-auto">
               {about.skills.map((skill) => (
@@ -162,13 +172,13 @@ export default function Home() {
       <div className="mt-24 mb-8 animate-fade-up relative overflow-hidden rounded-3xl border border-zinc-500/20 bg-zinc-500/5 p-10 text-center">
         <div className="absolute inset-0 bg-gradient-to-br from-zinc-500/5 to-zinc-500/5" />
         <div className="relative z-10 flex flex-col items-center">
-          <h2 className="text-2xl font-bold text-foreground sm:text-3xl mb-4">Let&apos;s build something great.</h2>
+          <h2 className="text-2xl font-bold text-foreground sm:text-3xl mb-4">Let&apos;s connect.</h2>
           <p className="text-muted-foreground max-w-md mx-auto mb-8 text-sm">
-            I&apos;m currently open for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+            I&apos;m currently looking for OJT and internship opportunities. If you have an opening or just want to say hi, I&apos;d love to hear from you!
           </p>
           <a
             href="mailto:jonathan.ripas@gmail.com"
-            className="inline-flex items-center gap-2 rounded-xl bg-zinc-600 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-zinc-700 hover:-translate-y-1 shadow-lg shadow-zinc-500/25 active:scale-95"
+            className="inline-flex items-center gap-2 rounded-xl bg-foreground px-8 py-4 text-sm font-bold text-background transition-all hover:opacity-90 hover:-translate-y-1 shadow-lg active:scale-95"
           >
             Say Hello
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>

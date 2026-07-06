@@ -1,25 +1,25 @@
 export const about = {
   name: "Jonathan B. Ripas",
-  tagline: "AI Engineer specializing in Generative AI, Machine Learning, and Data Science.",
-  location: "Dasmarinas, Cavite",
+  tagline: "Aspiring Frontend Developer & UI/UX Designer",
+  location: "Dasmariñas, Cavite",
   email: "jonathan.ripas@gmail.com",
   phone: "+639537826292",
-  bio: "I am a passionate AI Engineer with a strong track record of deploying cutting-edge models for financial services. I bridge the gap between complex algorithms and practical business solutions.",
-  metrics: [
-    { label: "Years Experience", value: "3+" },
-    { label: "AI Models Deployed", value: "10+" },
-    { label: "Projects Completed", value: "20+" }
+  bio: "I'm a 4th-year Information Systems student at Kolehiyo ng Lungsod ng Dasmariñas who genuinely enjoys building clean, intuitive, and visually appealing user interfaces. Frontend Development and UI/UX Design are where I thrive — combining creativity with problem-solving to craft better user experiences. Beyond software, I'm passionate about computer hardware, building PCs, and keeping up with the latest in tech. I'm continuously expanding my skills and looking forward to gaining real-world experience through my upcoming OJT.",
+  interests: [
+    { label: "Frontend Development", icon: "code" },
+    { label: "UI/UX Design", icon: "palette" },
+    { label: "Hardware Enthusiast", icon: "cpu" },
   ],
   skills: [
-    "Python",
-    "Machine Learning",
-    "Generative AI",
-    "TensorFlow",
-    "PyTorch",
-    "SQL",
+    "HTML/CSS",
+    "JavaScript",
+    "React",
     "Next.js",
     "TypeScript",
-    "FastAPI",
-    "Cloud (AWS/GCP)"
-  ]
+    "Tailwind CSS",
+    "Laravel",
+    "PHP",
+    "MySQL",
+    "Figma",
+  ],
 };
