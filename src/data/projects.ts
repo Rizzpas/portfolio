@@ -39,18 +39,4 @@ export const projects: Project[] = [
       "Built with React and Next.js for fast, SEO-friendly performance",
     ],
   },
-  {
-    title: "Personal Portfolio Website",
-    description:
-      "A modern, responsive portfolio website showcasing my work, education, and skills. Features a clean monochrome design with a 3-column layout, dark/light theme support, and smooth animations.",
-    tech: ["Next.js", "React", "TailwindCSS", "TypeScript"],
-    link: "#",
-    status: "Live",
-    highlights: [
-      "Three-column responsive layout with collapsible sidebar navigation",
-      "Monochrome design system with dark/light theme toggle and smooth transitions",
-      "Global search functionality indexing projects, education, and certifications",
-      "Staggered entry animations and interactive hover effects throughout",
-    ],
-  },
 ];

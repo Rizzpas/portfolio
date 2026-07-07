@@ -61,7 +61,7 @@ export function EducationDetailSection() {
               {edu.highlights && edu.highlights.length > 0 && (
                 <div className="mt-5">
                   <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground/60">
-                    Highlights & Achievements
+                    Key Focus Areas
                   </h4>
                   <ul className="space-y-2">
                     {edu.highlights.map((highlight, hIndex) => (

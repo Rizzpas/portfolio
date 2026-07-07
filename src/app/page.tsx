@@ -33,12 +33,12 @@ export default function Home() {
 
             {/* Name + Info + Buttons */}
             <div className="flex flex-col items-center sm:items-start flex-1 pt-2">
-              <div className="inline-flex items-center rounded-full border border-zinc-500/20 bg-zinc-500/10 px-3 py-1 mb-4 text-xs font-medium text-zinc-600 dark:text-zinc-400">
-                <span className="mr-1.5 flex h-2 w-2 rounded-full bg-zinc-500 animate-pulse"></span>
-                Open to OJT &amp; Internship Opportunities
+              <div className="inline-flex items-center rounded-full border border-green-500/20 bg-green-500/10 px-3 py-1 mb-4 text-xs font-medium text-green-700 dark:text-green-400">
+                <span className="mr-1.5 flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+                Open to Internship Opportunities
               </div>
 
-              <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl md:text-5xl mb-2">
+              <h1 className="text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl md:text-4xl mb-2">
                 {about.name}
               </h1>
 
@@ -99,6 +99,9 @@ export default function Home() {
                   )}
                   {interest.icon === "cpu" && (
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="9" y="9" width="6" height="6" /><path d="M15 2v2" /><path d="M15 20v2" /><path d="M2 15h2" /><path d="M2 9h2" /><path d="M20 15h2" /><path d="M20 9h2" /><path d="M9 2v2" /><path d="M9 20v2" /></svg>
+                  )}
+                  {interest.icon === "bar-chart" && (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" /></svg>
                   )}
                 </div>
                 <span className="text-xs sm:text-sm font-semibold text-foreground">{interest.label}</span>
