@@ -13,10 +13,9 @@ export const navSections: NavSection[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: "Facebook", url: "#", icon: "facebook" },
-  { name: "Instagram", url: "#", icon: "instagram" },
-  { name: "LinkedIn", url: "#", icon: "linkedin" },
-  { name: "Google", url: "#", icon: "google" },
-  { name: "GitHub", url: "#", icon: "github" },
-  { name: "Email", url: "mailto:jonathan.ripas@gmail.com", icon: "email" },
+  { name: "Facebook", url: "https://www.facebook.com/ripas.jonathan14", icon: "facebook" },
+  { name: "Instagram", url: "https://www.instagram.com/nat.rps/", icon: "instagram" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/jonathan-ripas-9197b5310/", icon: "linkedin" },
+  { name: "GitHub", url: "https://github.com/Rizzpas", icon: "github" },
+  { name: "Email", url: "mailto:jonathan.ripas14@gmail.com", icon: "email" },
 ];
